@@ -1,0 +1,141 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background:white;
+  font-family: 'Raleway', sans-serif;
+}
+
+header{
+  width: 100%;
+  height: 100px;
+  background: black;
+  display: flex;
+  justify-content: center;
+}
+
+.main-nav {
+  width: 90%;
+  max-width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+  width: 300px; 
+}
+
+.nav-menu{
+  width: 500px;
+}
+
+.nav-menu ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-menu a{
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 13px 0;
+}
+
+.btn-inicio{
+  border-bottom: 2px solid #ea6121
+}
+
+.nav-menu a:hover{
+  border-bottom: 2px solid #ea6121
+}
+
+.main-portafolio{
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+.portafolio-info{
+  width: 80%;
+  max-width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.portafolio-text h2{
+  color: #576671;
+  font-size: 49px;
+  font-weight: 200;
+  text-align: center;
+}
+
+.divisor{
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+}
+
+.portafolio-text hr {
+  height: 1px;
+  width: 20%;
+  background-color:#ea6121;
+}
+
+.portafolio-text p{
+  color: #576671;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.proyectos-container{
+  width: 100%;
+  max-width: 1000px;
+  padding-top: 40px ;
+}
+
+.proyectos-container{
+  width: 100%;
+  margin: auto;
+}
+
+.proyectos-columns img{
+width: 100%;
+}
+
+
+.proyecto-list .proyectos-container{
+  display: grid;
+  gap: 4px;
+}
+
+@media (min-width:520px){
+  .proyecto-list .proyectos-container{
+    grid-template-columns: repeat(2,50%);
+  }
+}
+
+@media (min-width:728px){
+  .proyecto-list .proyectos-container{
+    grid-template-columns: repeat(3,33.33%);
+  }
+}
+
+@media (min-width:1024px){
+  .proyecto-list .proyectos-container{
+    grid-template-columns: repeat(4,25%);
+  }
+
+  .proyectos-container{
+    width: 1000px;
+  }
+}
